@@ -1,0 +1,75 @@
+{
+"computingservices": [
+  {
+    "site_name": "RAL-LCG2",
+    "resourcename": "BatchFarm",
+    "resourcetype": "batchsystem",
+    "jobmanager": "condor",
+    "jobmanager_version": "8.6.9",
+    "status": "production",
+    "numberoflogicalcpus": 27300,
+    "resourcecapacity": 300000,
+    "resourcecapacityunit": "HS06",
+    "modification_time": 1542386287,
+    "queues": {
+      "grid3000M": {
+        "maxmemory": 8,
+        "maxwalltime": 5760,
+        "status": "production",
+        "vo": [
+          "ATLAS",
+          "CMS",
+          "LHCb",
+          "ALICE"
+        ]
+      }
+    },
+    "computingelements": {
+      "ce01": {
+        "endpointurl": "https://arc-ce01.gridpp.rl.ac.uk:2811/",
+        "flavour": "ARC-CE",
+        "version": "5.0.5",
+        "assignedvo": [
+          "ATLAS",
+          "CMS",
+          "LHCb",
+          "ALICE"
+        ]
+      },
+      "ce02": {
+        "endpointurl": "https://arc-ce02.gridpp.rl.ac.uk:2811/",
+        "flavour": "ARC-CE",
+        "version": "5.0.5",
+        "assignedvo": [
+          "ATLAS",
+          "CMS",
+          "LHCb",
+          "ALICE"
+        ]
+      },
+      "ce03": {
+        "endpointurl": "https://arc-ce03.gridpp.rl.ac.uk:2811/",
+        "flavour": "ARC-CE",
+        "version": "5.0.5",
+        "assignedvo": [
+          "ATLAS",
+          "CMS",
+          "LHCb",
+          "ALICE"
+        ]
+      },
+      "ce04": {
+        "endpointurl": "https://arc-ce04.gridpp.rl.ac.uk:2811/",
+        "flavour": "ARC-CE",
+        "version": "5.0.5",
+        "assignedvo": [
+          "ATLAS",
+          "CMS",
+          "LHCb",
+          "ALICE"
+        ]
+      }
+    }
+  }
+]
+}
