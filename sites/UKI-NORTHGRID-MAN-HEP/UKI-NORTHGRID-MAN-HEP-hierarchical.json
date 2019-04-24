@@ -1,0 +1,125 @@
+"computingresources" : {
+  "UKI-NORTHGRID-MAN-HEP-condor-arc-1": {
+    "Site": "UKI-NORTHGIRD-MAN-HEP",
+    "type": "batch",
+    "jobmanager": "condor",
+    "jobmanager_version": "8.6.18",
+    "status": "production",
+    "number_logical_cpus": 1648,
+    "capacity_HS06": 17963,
+    "OS" : "CentOS7.6",
+    "default_walltime_minutes": 4300,
+    "default_cputime_minutes": 4300,
+    "default_memory_GB": 2,
+    "assigned_vos": ["ATLAS", "ska","icecube","pheno"],
+    "comment" : "free form string...",
+    "publication_time":1540306937,
+    "shares": {
+      "long" : {
+        "type": "queue",
+        "max_walltime_minutes": 4300,
+        "max_cputime_minutes":4300,
+        "max_main_memory_GB": 3,
+        "assigned_vos": ["atlas"]
+      },
+      "medium": {
+        "type": "queue",
+        "max_walltime_minutes": 1444,
+        "max_cputime_minutes":1444,
+        "max_main_memory_GB": 3,
+        "assigned_vos": ["ska","icecube","pheno"]
+      },
+      "gpu": {
+        "type": "queue",
+        "max_walltime_minutes": 1444,
+        "max_cputime_minutes":1444,
+        "max_main_memory_GB": 12,
+        "assigned_vos": ["atlas","icecube"],
+      },
+    },
+    "accesspoints": {
+       "ARC5.4":{
+         "endpoint_urls" :["gsiftp://ce01.tier2.hep.manchester.ac.uk:2811"],
+         "flavour": "ARC-CE",
+         "version": "5.4",
+       },
+     },
+  },
+  "UKI-NORTHGRID-MAN-HEP-condor-arc-2": {
+    "Site": "UKI-NORTHGIRD-MAN-HEP",
+    "type": "batch",
+    "jobmanager": "condor",
+    "jobmanager_version": "8.6.18",
+    "status": "production",
+    "number_logical_cpus": 1024,
+    "capacity_HS06": 11161,
+    "OS" : "CentOS7.6",
+    "default_walltime_minutes": 1444,
+    "default_cputime_minutes": 1444,
+    "deafault_memory_GB": 2,
+    "assigned_vos": ["atlas", "ska","icecube","pheno"],
+    "comment" : "free form string...",
+    "publication_time":1540306937,
+    "shares": {
+      "long" : {
+        "type": "queue",
+        "max_walltime_minutes": 4300,
+        "max_cputime_minutes":4300,
+        "max_main_memory_GB": 4,
+        "assigned_vos": ["atlas"],
+      },
+      "medium": {
+        "type": "queue",
+        "max_walltime_minutes": 1444,
+        "max_cputime_minutes":1444,
+        "max_main_memory_GB": 4,
+        "assigned_vos": ["ska","icecube","pheno"],
+      },
+      "gpu": {
+        "type": "queue",
+        "max_walltime_minutes": 1444,
+        "max_cputime_minutes":1444,
+        "max_main_memory_GB": 12,
+        "assigned_vos": ["atlas","icecube"],
+      },
+    },
+    "accesspoints": {
+       "ARC5.4":{
+         "endpoint_urls" :["gsiftp://ce02.tier2.hep.manchester.ac.uk:2811"],
+         "flavour": "ARC-CE",
+         "version": "5.4",
+       },
+     },
+  },
+  "UKI-NORTHGRID-MAN-HEP-torque-cream": {
+    "Site": "UKI-NORTHGIRD-MAN-HEP",
+    "type": "batch",
+    "jobmanager": "torque",
+    "jobmanager_version": "2.5",
+    "status": "production",
+    "number_logical_cpus": 796,
+    "capacity_HS06": 8676,
+    "OS" : "SL6.8",
+    "default_walltime_minutes": 4300,
+    "default_cputime_minutes": 4300,
+    "default_memory_GB": 2,
+    "assigned_vos": ["ATLAS", "ska","icecube","pheno"],
+    "comment" : "free form string...",
+    "publication_time":1540306937,
+    "shares": {
+      "long" : {
+        "type": "queue",
+        "max_walltime_minutes": 4300,
+        "max_cputime_minutes":4300,
+        "max_main_memory_GB": 2,
+        "assigned_vos": ["atlas"],
+      },
+    "accesspoints": {
+       "CREAM1.16.4":{
+         "endpoint_urls" :["https://ce03.tier2.hep.manchester.ac.uk:8443"],
+         "flavour": "CREAM-CE",
+         "version": "1.16.4",
+       },
+     },
+  }
+}
